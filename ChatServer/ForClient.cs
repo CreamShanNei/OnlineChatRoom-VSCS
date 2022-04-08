@@ -29,6 +29,7 @@ class ForClient
             //在接收数据之前  判断一下socket连接是否断开
             if (socketclient.Poll(10, SelectMode.SelectRead))
             {
+
                 socketclient.Close();
                 break;//跳出循环 终止线程的执行
             }
