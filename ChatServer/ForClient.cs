@@ -48,12 +48,12 @@ class ForClient
                     //接收到数据的时候 要把这个数据 分发到客户端
                     //广播这个消息
                     Program.BroadcastMessage(nickname + " > " + message);
-                    Console.WriteLine("收到了客户端：" + socketclient.RemoteEndPoint + "，昵称为："+ nickname + "，消息:" + message);
+                    Console.WriteLine("[IP: {0}]({2}) {1}", socketclient.RemoteEndPoint, message, nickname);
                 }
 
                 catch
                 {
-                    Console.WriteLine("出错了");
+                    Console.WriteLine("[IP: {0}] Client Disconnected!", socketclient.RemoteEndPoint);
                 }
             }
         }
