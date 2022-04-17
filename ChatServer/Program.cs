@@ -6,6 +6,7 @@ class server_config
     public string server_port{get; set;} 
     public string eula{get; set;}  
 }
+
 class Program
 {   
     static List<ForClient> clientlist = new List<ForClient>();
