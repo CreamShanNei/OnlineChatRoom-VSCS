@@ -21,6 +21,7 @@ class Program
             if(m.eula == "false")
             {
                 Console.WriteLine("You need to agree our elua in config.json, just change the value to true");
+                Thread.Sleep(5000);
             }
             else
             {
